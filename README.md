@@ -1,28 +1,57 @@
-# Umanistica
+# Tradition Rewired
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+> Quando le tradizioni incontrano il digitale: uno sguardo umanistico alla trasformazione del lavoro
 
-## Development server
+## 🌐 Link al progetto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+👉 [https://traditionrewired.netlify.app/dashboard](https://traditionrewired.netlify.app/dashboard)
 
-## Code scaffolding
+## 🧠 Descrizione del progetto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Tradition Rewired** è un progetto di Informatica Umanistica che esplora l'interazione tra tecnologie digitali e mestieri tradizionali. L'obiettivo è riflettere sull’impatto della digitalizzazione sul mondo del lavoro, con particolare attenzione all’evoluzione delle professioni artigiane e alla nascita di nuove competenze richieste dalla trasformazione digitale.
 
-## Build
+Il progetto è stato sviluppato sotto forma di sito web dinamico, con sezioni dedicate a:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Industria 4.0 e automazione
+- Cloud computing e analisi dei dati
+- Lavoro flessibile e telelavoro
+- Trasformazione dei mestieri tradizionali
+- Educazione e competenze digitali
+- Nuove prospettive future
 
-## Running unit tests
+Ogni sezione è accompagnata da un’immagine rappresentativa e da un breve testo esplicativo.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Come eseguire il progetto in locale
 
-## Running end-to-end tests
+> Requisiti: Node.js (>= 14.x), npm
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clona il repository**
 
-## Further help
+```bash
+git clone https://github.com/tuo-username/tradition-rewired.git
+cd tradition-rewired
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# TraditionRewired
+2. **Installa le dipendenze**
+
+```bash
+npm install --legacy-peer-deps
+```
+
+3. **Avvia il server di sviluppo**
+
+```bash
+npm run start
+```
+
+4. **Apri il browser**
+
+Visita http://localhost:4200 per visualizzare il progetto in locale.
+
+## Contesto accademico
+
+Il sito è stato realizzato nell’ambito di un corso universitario di Informatica Umanistica, con l’intento di proporre una riflessione critica sull’influenza delle tecnologie digitali nel mondo contemporaneo.
+
+## Autore
+
+Emanuele Di Giacomo | 0001032110
