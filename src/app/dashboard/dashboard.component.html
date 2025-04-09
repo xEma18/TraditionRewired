@@ -1,0 +1,71 @@
+<div class="dashboard">
+  <div class="navbar-container">
+    <div class="navbar" [ngClass]="{fade: isScrolled()}">
+      <div class="logo">Tradition<span>Rewired</span></div>
+      <div class="study-btn" (click)="scrollToStudy()">
+        Vai allo studio
+      </div>
+    </div>
+  </div>
+
+  <div class="header-section">
+    <div class="side-text">
+      <div class="title">Intrecci Digitali</div>
+      <div class="subtitle">
+        Tecnologie e saperi antichi si incontrano per raccontare una nuova narrazione culturale: interattiva, accessibile e senza tempo.
+      </div>
+      <div class="study-btn" (click)="scrollToStudy()">
+        Vai allo studio
+      </div>
+    </div>
+  </div>
+
+  <div class="info-section">
+    @for (info of infos; track $index) {
+      <div class="card">
+        <div class="img-background"></div>
+        <div class="title">{{info.title}}</div>
+        <div class="paragraph">
+          {{info.subtitle}}
+        </div>
+        <img [src]="info.img" alt="">
+      </div>
+    }
+  </div>
+
+  <div class="question-section">
+    @for (conversation of conversationsData; track $index) {
+      <div class="wrapper">
+        <div class="title">{{conversation.title}}</div>
+        <div class="chat-container">
+          @for (item of conversation.messages; track $index) {
+            <div class="question">
+              <div class="icon">
+                <img src="https://sartori-ambiente.com/wp-content/uploads/2024/12/Emanuele-Di-Giacomo_001-scaled.jpg" alt="">
+              </div>
+              <div class="text">{{item.question}}</div>
+            </div>
+            <div class="answer">
+              <div class="text">{{item.answer}}</div>
+              <div class="icon">
+                <img [src]="conversation.img" alt="">
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="footer-section">
+    <div class="left-side">
+      <div class="logo">Tradition<span>Rewired</span></div>
+      <div class="sub-logo">Informatica Umanistica - Università di Bologna</div>
+      <div class="author">Emanuele Di Giacomo - 0001032110</div>
+    </div>
+
+    <div class="right-side">
+      <div class="go-back" (click)="scrollToTop()">Torna in cima</div>
+    </div>
+  </div>
+</div>
