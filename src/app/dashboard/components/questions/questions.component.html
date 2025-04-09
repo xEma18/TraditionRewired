@@ -1,0 +1,23 @@
+<div class="question-section">
+  @for (conversation of conversationsData; track $index) {
+    <div class="wrapper">
+      <div class="title">{{conversation.title}}</div>
+      <div class="chat-container">
+        @for (item of conversation.messages; track $index) {
+          <div class="question">
+            <div class="icon">
+              <img src="https://sartori-ambiente.com/wp-content/uploads/2024/12/Emanuele-Di-Giacomo_001-scaled.jpg" alt="">
+            </div>
+            <div class="text">{{item.question}}</div>
+          </div>
+          <div class="answer">
+            <div class="text">{{item.answer}}</div>
+            <div class="icon">
+              <img [src]="conversation.img" alt="">
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

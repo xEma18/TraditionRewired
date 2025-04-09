@@ -1,0 +1,12 @@
+<div class="info-section">
+  @for (info of infos; track $index) {
+    <div class="card">
+      <div class="img-background"></div>
+      <div class="title">{{info.title}}</div>
+      <div class="paragraph">
+        {{info.subtitle}}
+      </div>
+      <img [src]="info.img" alt="">
+    </div>
+  }
+</div>

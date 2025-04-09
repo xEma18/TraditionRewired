@@ -1,0 +1,84 @@
+$primary: rgb(90, 90, 235);
+$secondary: rgb(79, 191, 203);
+
+.header-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  background: rgba(0, 0, 0, 0.4);
+
+  padding: 192px 160px;
+
+  height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+      no-repeat center center/cover;
+
+    z-index: -1;
+  }
+
+  .side-text {
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+
+    .title {
+      font-size: 80px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .study-btn {
+      padding: 16px;
+
+      font-size: 14px;
+
+      width: 100%;
+    }
+  }
+}
+
+// Utils
+.study-btn {
+  background-color: $primary;
+
+  color: #fff;
+
+  border-radius: 99px;
+
+  padding: 8px;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+}
