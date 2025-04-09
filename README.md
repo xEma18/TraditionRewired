@@ -4,7 +4,7 @@
 
 ## 🌐 Link al progetto
 
-👉 [https://traditionrewired.netlify.app/dashboard](https://traditionrewired.netlify.app/dashboard)
+👉 [https://traditionrewired.netlify.app](https://traditionrewired.netlify.app)
 
 ## 🧠 Descrizione del progetto
 
@@ -28,7 +28,7 @@ Ogni sezione è accompagnata da un’immagine rappresentativa e da un breve test
 1. **Clona il repository**
 
 ```bash
-git clone https://github.com/tuo-username/tradition-rewired.git
+git clone https://github.com/xEma18/TraditionRewired.git
 cd tradition-rewired
 ```
 
