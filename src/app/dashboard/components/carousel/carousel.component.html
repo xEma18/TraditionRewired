@@ -1,0 +1,32 @@
+<div class="carousel-section">
+  <div class="title">Prospettive future (AI-powered)</div>
+  <div class="carousels-container">
+    <div class="carousel">
+      <div class="carousel-title">Giuseppe - Falegname</div>
+      <div class="arrow arrow-left" (click)="handleArrowClick('left', 'wood')"><</div>
+      <div class="slide-container">
+        @for (slide of woodWorkerSlides(); track $index) {
+          <div class="slide" [ngStyle]="getStyle(slide.index, 'wood')">
+            <div class="slide-title"><i [ngClass]="slide.icon"></i> {{slide.title}}</div>
+            <div class="slide-body">{{slide.text}}</div>
+          </div>
+        }
+      </div>
+      <div class="arrow arrow-right" (click)="handleArrowClick('right', 'wood')">></div>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel-title">Roberto - Muratore</div>
+      <div class="arrow arrow-left" (click)="handleArrowClick('left', 'brick')"><</div>
+      <div class="slide-container">
+        @for (slide of brickLayerSlides(); track $index) {
+          <div class="slide" [ngStyle]="getStyle(slide.index, 'brick')">
+            <div class="slide-title"><i [ngClass]="slide.icon"></i> {{slide.title}}</div>
+            <div class="slide-body">{{slide.text}}</div>
+          </div>
+        }
+      </div>
+      <div class="arrow arrow-right" (click)="handleArrowClick('right', 'brick')">></div>
+    </div>
+  </div>
+</div>

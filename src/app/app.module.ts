@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeaderComponent } from './dashboard/components/header/header.component';
 import { InfoComponent } from './dashboard/components/info/info.component';
 import { QuestionsComponent } from './dashboard/components/questions/questions.component';
+import { CarouselComponent } from './dashboard/components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { QuestionsComponent } from './dashboard/components/questions/questions.c
     DashboardComponent,
     HeaderComponent,
     InfoComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
